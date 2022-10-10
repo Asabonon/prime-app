@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { InputText } from 'primereact';
+import { Button } from 'primereact';
+import { Toast } from 'primereact';
+import { useState, useRef } from "react";
+import { DataTable } from 'primereact/datatable';
+
+
+import React from 'react';
+import "primereact/resources/themes/mdc-dark-indigo/theme.css";  //theme
+import "primereact/resources/primereact.min.css";                  //core css
+import "primeicons/primeicons.css";                                //icons
+import "primeflex/primeflex.css";
+import DataTableTask from './DataTableTask';
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App p-input-filled">
+      <DataTableTask />
     </div>
   );
 }
